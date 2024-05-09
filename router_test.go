@@ -1,11 +1,12 @@
 package ace
 
 import (
-	"github.com/plimble/utils/errors2"
-	"github.com/stretchr/testify/assert"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/plimble/utils/errors2"
+	"github.com/stretchr/testify/assert"
 )
 
 var testHandler = func(c *C) { c.Next() }

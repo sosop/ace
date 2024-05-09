@@ -4,7 +4,7 @@ import (
 	"github.com/plimble/sessions"
 )
 
-//SessionOptions session options
+// SessionOptions session options
 type SessionOptions struct {
 	Path   string
 	Domain string
@@ -16,7 +16,7 @@ type SessionOptions struct {
 	HTTPOnly bool
 }
 
-//Session use session middleware
+// Session use session middleware
 func Session(store sessions.Store, options *SessionOptions) HandlerFunc {
 	var sessionOptions *sessions.Options
 
